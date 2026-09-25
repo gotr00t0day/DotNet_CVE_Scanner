@@ -43,17 +43,17 @@ pip install requests urllib3 colorama
 
 ```bash
 # Scan a single target
-python3 dotnet_version_cve_scanner.py -t example.com
+python3 dotnet_cve_scanner.py -t example.com
 
 # Scan a full URL (scheme respected)
-python3 dotnet_version_cve_scanner.py -t https://example.com
+python3 dotnet_cve_scanner.py -t https://example.com
 
 # Scan a list of targets from a file (one per line)
-python3 dotnet_version_cve_scanner.py -f targets.txt
+python3 dotnet_cve_scanner.py -f targets.txt
 
 # Export results
-python3 dotnet_version_cve_scanner.py -f targets.txt -o results.json --format json
-python3 dotnet_version_cve_scanner.py -f targets.txt -o results.csv  --format csv
+python3 dotnet_cve_scanner.py -f targets.txt -o results.json --format json
+python3 dotnet_cve_scanner.py -f targets.txt -o results.csv  --format csv
 ```
 
 ### Options
